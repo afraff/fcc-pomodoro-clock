@@ -1,32 +1,67 @@
 .App {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;  
+  margin: 75px auto;
+}
+
+button {
+  color: white;
+  background-color: #5F9F9F;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 7px 15px;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: #96CDCD;
+}
+
+#header {
+  width: 100%;
   text-align: center;
+  font-size: 2.2em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.setTimer {
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 50px;
+}
+
+.SetTimer-controls {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.Timer {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Controls {
+  display: flex;
+  justify-content: center;
+}
+
+#time-left {
+  font-size: 2em;
+}
+
+#tomato {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #8b0000;
+  border-radius: 50%;
+  height: 300px;
+  width:300px;
 }
